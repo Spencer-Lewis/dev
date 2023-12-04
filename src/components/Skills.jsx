@@ -1,9 +1,9 @@
 import React from 'react';
 
 const Skills = () => (
-    <section id="skills" class="container mx-auto my-8 px-4">
-        <h2 class="text-3xl font-bold mb-4">Skills</h2>
-        <ul class="list-disc ml-6">
+    <section id="skills" className="container mx-auto my-8 px-4">
+        <h2 className="text-3xl font-bold mb-4">Skills</h2>
+        <ul className="list-disc ml-6">
             <li><strong>Front-End:</strong> React | Redux | Angular | Javascript | Typescript |
                 HTML | CSS | Apollo | NextJS</li>
             <li><strong>Back-End:</strong> Node | Express | Restify | Python | Fast API | Java |
@@ -12,8 +12,8 @@ const Skills = () => (
                 Search | Redis</li>
             <li><strong>Testing:</strong> Jest | Enzyme | React Testing Library | Mocha | Chai |
                 PyTest | BDD</li>
-            <li><strong>Project Management:</strong> Github, Agile, XP Practices, Pivotal
-                Tracker, Jira, Aha, Trello, Asana, Confluence, CI/CD Practices</li>
+            <li><strong>Project Management:</strong> Github | Agile | XP Practices | Pivotal
+                Tracker | Jira | Aha | Trello | Asana | Confluence | CI/CD Practices</li>
         </ul>
     </section>
 );
