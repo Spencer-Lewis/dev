@@ -8,7 +8,7 @@ import Button from '@mui/material/Button';
 import CodeIcon from '@mui/icons-material/Code';
 import { Link } from "react-router-dom";
 
-const pages = ['Projects', 'Experience', 'Contact'];
+const pages = ['Projects', 'Resume', 'Contact'];
 
 function ResponsiveAppBar() {
 

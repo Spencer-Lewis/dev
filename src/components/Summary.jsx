@@ -5,7 +5,6 @@ import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import { TypeAnimation } from 'react-type-animation';
 import avatar from "../assets/portrait.jpg";
-import Skills from "./Skills"
 
 const Summary = () => (
     <section id="about" className="container mx-auto my-8 px-4">
@@ -45,8 +44,6 @@ const Summary = () => (
                 and agile methodologies.
             </p>
         </div>
-
-        <Skills />
     </section>
 );
 
