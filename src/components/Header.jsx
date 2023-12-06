@@ -7,12 +7,12 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import CodeIcon from '@mui/icons-material/Code';
 
-const pages = ['Projects', 'Experience', 'Contact Me'];
+const pages = ['Projects', 'Experience', 'Contact'];
 
 function ResponsiveAppBar() {
 
   return (
-    <AppBar position="fixed">
+    <AppBar position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <CodeIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -31,7 +31,6 @@ function ResponsiveAppBar() {
               color: 'inherit',
               textDecoration: 'none',
             }}
-            onClick={() => {console.log('Clicked HOME')}}
           >
             Home
           </Typography>
@@ -40,7 +39,7 @@ function ResponsiveAppBar() {
                 {pages.map((page) => (
                 <Button
                     key={page}
-                    onClick={() => {console.log(`Clicked ${page}`)}}
+                    href={`/${page.toLowerCase()}`}
                     sx={{ my: 2, color: 'white', display: 'block' }}
                 >
                     {page}
