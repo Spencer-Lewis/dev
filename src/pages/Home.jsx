@@ -5,7 +5,7 @@ import Skills from "../components/Skills"
 const Home = () => (
     <>
         <section id="about" className="container mx-auto my-8 px-4">
-            <AvatarTyper/>
+            <AvatarTyper />
             <Summary/>
             <Skills/>
         </section>

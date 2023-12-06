@@ -6,8 +6,8 @@ import { TypeAnimation } from 'react-type-animation';
 import avatar from "../assets/portrait.jpg";
 
 const AvatarTyper = () => (
-    <Box className="">
-        <Grid container justify="center">
+    <Box className="text-center mt-10 mb-10">
+        <Grid container justifyContent="center">
             <Avatar className="" src={avatar} alt="Spencer Lewis" />
         </Grid>
         <Typography className="" variant="h4">
