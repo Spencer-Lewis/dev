@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import ContactPage from './pages/Contact'
-import ResumePage from './pages/Resume'
 import Header from './components/Header'
-import ProjectsPage from './pages/Projects'
-import SummaryPage from './pages/Summary'
+import Contact from './pages/Contact'
+import Resume from './pages/Resume'
+import Portfolio from './pages/Portfolio'
+import Home from './pages/Home'
 import './App.css'
 
 function App() {
@@ -12,10 +12,10 @@ function App() {
     <>
         <Header />
         <Routes >
-            <Route element={<SummaryPage/>} path="/"/>
-            <Route element={<ProjectsPage/>} path="/projects"/>
-            <Route element={<ResumePage/>} path="/resume"/>
-            <Route element={<ContactPage/>} path="/contact"/>
+            <Route element={<Home/>} path="/"/>
+            <Route element={<Portfolio/>} path="/portfolio"/>
+            <Route element={<Resume/>} path="/resume"/>
+            <Route element={<Contact/>} path="/contact"/>
         </Routes>
     </>
   )

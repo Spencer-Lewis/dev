@@ -1,11 +1,11 @@
 import Summary from "../components/Summary"
 import Skills from "../components/Skills"
 
-const SummaryPage = () => (
+const Home = () => (
     <>
         <Summary />
         <Skills />
     </>
   );
   
-  export default SummaryPage;
+  export default Home;

@@ -1,11 +1,11 @@
 import Experience from "../components/Experience";
 import Education from "../components/Education";
 
-const ResumePage = () => (
+const Resume = () => (
     <>
         <Experience />
         <Education />
     </>
   );
   
-  export default ResumePage;
+  export default Resume;

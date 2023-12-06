@@ -1,9 +1,10 @@
 import Projects from "../components/Projects"
 
-const ProjectsPage = () => (
+const Portfolio = () => (
     <>
         <Projects />
     </>
   );
   
-  export default ProjectsPage;
+  export default Portfolio
+;
