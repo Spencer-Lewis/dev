@@ -21,7 +21,6 @@ function ResponsiveAppBar() {
                         <Typography
                             variant="h6"
                             noWrap
-                            component="a"
                             sx={{
                                 mr: 2,
                                 mb: 0.2,
@@ -40,9 +39,8 @@ function ResponsiveAppBar() {
                     <CodeIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {pages.map((page) => (
-                            <Link to={`/${page.toLowerCase()}`}>
+                            <Link key={page} to={`/${page.toLowerCase()}`}>
                                 <Button
-                                    key={page}
                                     sx={{ my: 2, color: 'white', display: 'block' }}
                                 >
                                     {page}

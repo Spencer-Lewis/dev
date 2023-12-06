@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-// import DownloadResume from './components/DownloadResume'
+import Contact from './components/Contact'
 // import Education from './components/Education'
 import Experience from './components/Experience'
 import Header from './components/Header'
@@ -16,8 +16,7 @@ function App() {
             <Route element={<Summary/>} path="/"/>
             <Route element={<Projects/>} path="/projects"/>
             <Route element={<Experience/>} path="/experience"/>
-            {/* <Education /> */}
-            {/* <DownloadResume exact path=""/> */}
+            <Route element={<Contact/>} path="/contact"/>
         </Routes>
     </>
   )
