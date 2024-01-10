@@ -67,7 +67,6 @@ function ResponsiveAppBar() {
                   }}
                 >
                   <ListItemIcon sx={{ color: 'white', mr: -3, mb: 0.25 }}>{page.icon}</ListItemIcon>
-                  {/* <Typography variant="body1" sx={{fontFamily:"Segoe UI", marginLeft: 0}}>{page.label}</Typography> */}
                   <p className='font-sans'>{page.label}</p>
                 </Button>
               </Link>

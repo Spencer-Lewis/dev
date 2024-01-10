@@ -1,10 +1,9 @@
 import Experience from "../components/Experience";
-import Education from "../components/Education";
+import Timeline from "../components/Timeline";
 
 const Resume = () => (
     <>
-        <Experience />
-        <Education />
+        <Timeline />
     </>
   );
   
