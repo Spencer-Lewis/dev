@@ -28,9 +28,9 @@ const AvatarTyper = () => (
                 }}
             />
         </Grid>
-        <div className=""> {/* Wrapped in a div to avoid Typography overriding styles */}
+        <div className="">
             <Typography variant="h4">
-                <TypeAnimation sequence={["Spencer Lewis"]} typeSpeed={30} cursor={false} />
+                <TypeAnimation sequence={["Spencer Lewis"]} typeSpeed={30} cursor={false}/>
             </Typography>
 
             <Typography variant="h5">
@@ -45,7 +45,7 @@ const AvatarTyper = () => (
                     ]}
                     wrapper="span"
                     speed={30}
-                    style={{ fontSize: { xs: '1.5em', md: '2em' }, display: 'inline-block' }}
+                    style={{ fontSize: { xs: '2em', md: '2.5em' }, display: 'inline-block' }}
                     repeat={Infinity}
                 />
             </Typography>
