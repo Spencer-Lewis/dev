@@ -19,19 +19,18 @@ const Projects = () => {
 
   return (
     <section id="projects" className="container mx-auto my-8 px-4">
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8 mx-auto">
         {projects.map((project) => (
           <div key={project.id} className="p-6 rounded-lg shadow-lg project">
             <h2 className="text-xl font-bold mb-2">{project.title}</h2>
-            {project.imageUrls?.map((imageUrl) => {
-                return <img
-                    src={imageUrl}
-                    alt={project.title}
-                    className="w-full h-48 object-cover mb-4 rounded-md"
-                />
-            })}
-            
-            
+            {project.imageUrls?.map((imageUrl, index) => (
+              <img
+                key={index}
+                src={imageUrl}
+                alt={project.title}
+                className="w-full h-64 object-cover mb-4 rounded-md"
+              />
+            ))}
             <p className="text-white mb-4 font-sans">{project.description}</p>
           </div>
         ))}
