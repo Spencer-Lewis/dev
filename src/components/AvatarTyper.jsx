@@ -6,12 +6,12 @@ import { TypeAnimation } from 'react-type-animation';
 import avatar from "../assets/portrait.jpg";
 
 const AvatarTyper = () => (
-    <Box className="text-center text-gray-300 mt-10 mb-10">
+    <Box className="text-center mt-10 mb-10">
         <Grid container justifyContent="center">
             <Avatar className="" src={avatar} alt="Spencer Lewis" sx={{ width: 170, height: 190 }}/>
         </Grid>
         <Typography className="" variant="h4">
-            <TypeAnimation sequence={["Spencer Lewis"]} typeSpeed={30} />
+            <TypeAnimation sequence={["Spencer Lewis"]} typeSpeed={30} cursor={false}/>
         </Typography>
 
         <Typography className="" variant="h5">

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Summary = () => (
-  <div className="ml-11 text-gray-300 rounded-md p-4">
+  <div className="ml-11 rounded-md p-4">
     <p className="text-lg">
       Full-Stack Software Engineer with 7 years of experience in front-end, back-end
       development, and project management.
