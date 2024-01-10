@@ -4,7 +4,7 @@ import Skills from "../components/Skills"
 
 const Home = () => (
     <>
-        <section id="about" className="container mx-auto my-8 px-4">
+        <section id="about" className="container mx-auto my-8 px-3">
             <AvatarTyper />
             <Summary/>
             <Skills/>

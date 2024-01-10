@@ -16,38 +16,40 @@ const growAnimation = keyframes`
 `;
 
 const AvatarTyper = () => (
-    <Box className="text-center mt-10 mb-10">
+    <Box className="text-center mt-10 mb-4 md:mb-10"> {/* Updated margin */}
         <Grid container justifyContent="center">
             <Avatar
                 src={avatar}
                 alt="Spencer Lewis"
                 sx={{
-                    width: 170,
-                    height: 190,
+                    width: { xs: 120, md: 170 }, // Adjusted width for mobile and desktop
+                    height: { xs: 140, md: 190 }, // Adjusted height for mobile and desktop
                     animation: `${growAnimation} 0.5s ease-in-out`,
                 }}
             />
         </Grid>
-        <Typography className="" variant="h4">
-            <TypeAnimation sequence={["Spencer Lewis"]} typeSpeed={30} cursor={false} />
-        </Typography>
+        <div className=""> {/* Wrapped in a div to avoid Typography overriding styles */}
+            <Typography variant="h4">
+                <TypeAnimation sequence={["Spencer Lewis"]} typeSpeed={30} cursor={false} />
+            </Typography>
 
-        <Typography className="" variant="h5">
-            <TypeAnimation
-                sequence={[
-                    "Frontend Developer",
-                    1000,
-                    "Backend Developer",
-                    1000,
-                    "Problem Solver",
-                    1000
-                ]}
-                wrapper="span"
-                speed={30}
-                style={{ fontSize: '2em', display: 'inline-block' }}
-                repeat={Infinity}
-            />
-        </Typography>
+            <Typography variant="h5">
+                <TypeAnimation
+                    sequence={[
+                        "Frontend Developer",
+                        1000,
+                        "Backend Developer",
+                        1000,
+                        "Problem Solver",
+                        1000
+                    ]}
+                    wrapper="span"
+                    speed={30}
+                    style={{ fontSize: { xs: '1.5em', md: '2em' }, display: 'inline-block' }}
+                    repeat={Infinity}
+                />
+            </Typography>
+        </div>
     </Box>
 );
 
