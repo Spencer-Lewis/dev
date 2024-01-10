@@ -1,10 +1,10 @@
 import Projects from "../components/Projects"
-import ProjectCarousel from "../components/ProjectCarousel";
+// import ProjectCarousel from "../components/ProjectCarousel";
 
 const Portfolio = () => (
     <>
         <Projects />
-        <ProjectCarousel />
+        {/* <ProjectCarousel /> */}
     </>
   );
   

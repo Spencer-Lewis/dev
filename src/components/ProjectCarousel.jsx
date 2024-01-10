@@ -18,7 +18,7 @@ class ProjectCarousel extends Component {
                     <p className="legend">Legend 2</p>
                 </div>
                 <div>
-                <Projects />
+                    <Projects />
                 </div>
             </Carousel>
         );
