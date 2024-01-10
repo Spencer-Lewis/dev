@@ -39,7 +39,7 @@ function ResponsiveAppBar() {
 
   return (
     <Box>
-      <AppBar position="sticky" sx={{ backgroundColor: '#333' }}>
+      <AppBar position="sticky" sx={{ backgroundColor: '#333', top: 0 }}>
         <Toolbar disableGutters>
           <IconButton
             color="inherit"
@@ -66,8 +66,9 @@ function ResponsiveAppBar() {
                     fontFamily: 'Segoe UI',
                   }}
                 >
-                  <ListItemIcon sx={{ color: 'white', mr: -3 }}>{page.icon}</ListItemIcon>
-                  <Typography variant="body1" sx={{fontFamily:"Segoe UI", marginLeft: 0}}>{page.label}</Typography>
+                  <ListItemIcon sx={{ color: 'white', mr: -3, mb: 0.25 }}>{page.icon}</ListItemIcon>
+                  {/* <Typography variant="body1" sx={{fontFamily:"Segoe UI", marginLeft: 0}}>{page.label}</Typography> */}
+                  <p className='font-sans'>{page.label}</p>
                 </Button>
               </Link>
             ))}
@@ -85,8 +86,9 @@ function ResponsiveAppBar() {
           {pages.map((page) => (
             <Link key={page.label} to={`${page.route}`} style={{ textDecoration: 'none' }}>
               <ListItem button onClick={toggleDrawer(false)}>
-                <ListItemIcon sx={{ color: 'white', mr: 0.5 }}>{page.icon}</ListItemIcon>
-                <ListItemText primary={page.label} />
+                <ListItemIcon sx={{ color: 'white', mr: -3, mb: 0 }}>{page.icon}</ListItemIcon>
+                <ListItemText primary={<p className='font-sans'>{page.label}</p>} />
+                
               </ListItem>
             </Link>
           ))}
