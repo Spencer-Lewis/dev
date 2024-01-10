@@ -4,20 +4,37 @@ import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import { TypeAnimation } from 'react-type-animation';
 import avatar from "../assets/portrait.jpg";
+import { keyframes } from '@mui/system';
+
+const growAnimation = keyframes`
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+`;
 
 const AvatarTyper = () => (
     <Box className="text-center mt-10 mb-10">
         <Grid container justifyContent="center">
-            <Avatar className="" src={avatar} alt="Spencer Lewis" sx={{ width: 170, height: 190 }}/>
+            <Avatar
+                src={avatar}
+                alt="Spencer Lewis"
+                sx={{
+                    width: 170,
+                    height: 190,
+                    animation: `${growAnimation} 0.5s ease-in-out`,
+                }}
+            />
         </Grid>
         <Typography className="" variant="h4">
-            <TypeAnimation sequence={["Spencer Lewis"]} typeSpeed={30} cursor={false}/>
+            <TypeAnimation sequence={["Spencer Lewis"]} typeSpeed={30} cursor={false} />
         </Typography>
 
         <Typography className="" variant="h5">
             <TypeAnimation
                 sequence={[
-                    // Same substring at the start will only be typed out once, initially
                     "Frontend Developer",
                     1000,
                     "Backend Developer",
@@ -32,6 +49,6 @@ const AvatarTyper = () => (
             />
         </Typography>
     </Box>
-)
+);
 
-export default AvatarTyper
+export default AvatarTyper;
