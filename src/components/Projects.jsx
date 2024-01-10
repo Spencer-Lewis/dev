@@ -1,4 +1,8 @@
 import React from 'react';
+import choreScreenshot from '../assets/chore_app/chores_screenshot.jpg';
+import roomsScreenshot from '../assets/chore_app/rooms_screenshot.jpg';
+import editChore from '../assets/chore_app/edit_chore.jpg';
+import kitchenScreenshot from '../assets/chore_app/kitchen_screenshot.jpg';
 
 const Projects = () => {
   // Sample project data (replace this with your actual project data)
@@ -7,7 +11,7 @@ const Projects = () => {
       id: 1,
       title: 'House Task Manager',
       description: 'Chore and Task Manager to aid in managing all repeating or one-off household tasks',
-      imageUrls: ['https://via.placeholder.com/800x400', 'https://via.placeholder.com/800x400'], // Replace with actual image URL
+      imageUrls: [choreScreenshot, roomsScreenshot, kitchenScreenshot,editChore ],
     },
     {
       id: 2,
@@ -28,7 +32,8 @@ const Projects = () => {
                 key={index}
                 src={imageUrl}
                 alt={project.title}
-                className="w-full h-64 object-cover mb-4 rounded-md"
+                className="w-full h-auto object-cover mb-4 rounded-md"
+                style={{ maxWidth: '100%' }} // Set maximum width to fit the container
               />
             ))}
             <p className="text-white mb-4 font-sans">{project.description}</p>
