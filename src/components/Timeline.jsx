@@ -6,21 +6,6 @@ import StarIcon from '@mui/icons-material/Star';
 import 'react-vertical-timeline-component/style.min.css';
 
 const Timeline = () => (
-  //   <section id="experience" className="container mx-auto my-8 px-4">
-  //   <h2 className="text-3xl font-bold mb-4">Education</h2>
-
-  //   <div className="mb-8">
-  //       <h3 className="text-xl font-bold mb-2">Full Stack Web Development Course – General Assembly</h3>
-  //       <p className="text-gray-700">Nov 2015 - Mar 2016</p>
-  //   </div>
-
-  //   <div className="mb-8">
-  //       <h3 className="text-xl font-bold mb-2">B.S. Biology – Southern Polytechnic State University</h3>
-  //       <p className="text-gray-700">Minor in Chemistry</p>
-  //       <p className="text-gray-700">Aug 2010 - May 2014</p>
-  //   </div>
-
-  // </section>
   <VerticalTimeline>
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
@@ -41,6 +26,7 @@ const Timeline = () => (
         integrity of client relationships and financial data.
       </p>
     </VerticalTimelineElement>
+
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
       contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
@@ -57,6 +43,7 @@ const Timeline = () => (
         payments and maintain client relationships and financial data.
       </p>
     </VerticalTimelineElement>
+
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
       contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
@@ -76,54 +63,30 @@ const Timeline = () => (
         and scalable software solutions leveraging technologies such as Java, Spring Boot, AngularJS, IBM DB2, and Redis.
       </p>
     </VerticalTimelineElement>
-    {/* <VerticalTimelineElement
-      className="vertical-timeline-element--work"
-      date="2008 - 2010"
-      iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-      icon={<WorkIcon />}
-    >
-      <h3 className="vertical-timeline-element-title">Web Designer</h3>
-      <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-      <p>
-        User Experience, Visual Design
-      </p>
-    </VerticalTimelineElement> */}
 
     <VerticalTimelineElement
       className="vertical-timeline-element--education"
-      date="April 2013"
+      contentStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+      contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+      date="Nov 2015 - Mar 2016"
       iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
       icon={<SchoolIcon />}
     >
-      <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-      <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-      <p>
-        Strategy, Social Media
-      </p>
+      <h3 className="vertical-timeline-element-title">Full Stack Web Development Course</h3>
+      <h4 className="vertical-timeline-element-subtitle">General Assembly - Atlanta, GA</h4>
     </VerticalTimelineElement>
+
     <VerticalTimelineElement
       className="vertical-timeline-element--education"
-      date="November 2012"
+      contentStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+      contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+      date="Aug 2010 - May 2014"
       iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
       icon={<SchoolIcon />}
     >
-      <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-      <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-      <p>
-        Creative Direction, User Experience, Visual Design
-      </p>
-    </VerticalTimelineElement>
-    <VerticalTimelineElement
-      className="vertical-timeline-element--education"
-      date="2002 - 2006"
-      iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-      icon={<SchoolIcon />}
-    >
-      <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-      <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-      <p>
-        Creative Direction, Visual Design
-      </p>
+      <h3 className="vertical-timeline-element-title">B.S. Biology focus in Molecular Biology</h3>
+      <h4 className="vertical-timeline-element-subtitle">Kennessaw State University - Atlanta, GA</h4>
+      <p>Minor in Chemistry</p>
     </VerticalTimelineElement>
 
   </VerticalTimeline>

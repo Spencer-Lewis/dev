@@ -30,7 +30,7 @@ const AvatarTyper = () => (
         </Grid>
         <div className="">
             <Typography variant="h4">
-                <TypeAnimation sequence={["Spencer Lewis"]} typeSpeed={30} cursor={false}/>
+                <TypeAnimation sequence={["Spencer Lewis"]} speed={40} cursor={false}/>
             </Typography>
 
             <Typography variant="h5">
@@ -44,7 +44,7 @@ const AvatarTyper = () => (
                         1000
                     ]}
                     wrapper="span"
-                    speed={30}
+                    speed={50}
                     style={{ fontSize: { xs: '2em', md: '2.5em' }, display: 'inline-block' }}
                     repeat={Infinity}
                 />
