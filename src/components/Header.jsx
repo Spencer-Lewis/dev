@@ -18,10 +18,10 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import { Link } from 'react-router-dom';
 
 const pages = [
-  { label: 'Home', icon: <HomeIcon />, route: './dev' },
-  { label: 'Portfolio', icon: <WorkIcon />, route: './dev/portfolio' },
-  { label: 'Resume', icon: <DescriptionIcon />, route: './dev/resume' },
-  { label: 'Contact', icon: <MailOutlineIcon />, route: './dev/contact' },
+  { label: 'Home', icon: <HomeIcon />, route: '/' },
+  { label: 'Portfolio', icon: <WorkIcon />, route: '/portfolio' },
+  { label: 'Resume', icon: <DescriptionIcon />, route: '/resume' },
+  { label: 'Contact', icon: <MailOutlineIcon />, route: '/contact' },
 ];
 
 function ResponsiveAppBar() {
