@@ -5,7 +5,6 @@ const ContactForm = () => {
     e.preventDefault();
     const formData = new FormData(e.target);
     e.target.reset();
-    console.log('Form submitted:', formData);
   };
 
   return (
@@ -13,7 +12,7 @@ const ContactForm = () => {
       <h2 className="text-2xl font-bold mb-4 font-sans">Contact Me</h2>
       <form
         name="contact"
-        method="POST"
+        method="post"
         data-netlify="true"
         onSubmit={handleSubmit}
         className="text-black"
