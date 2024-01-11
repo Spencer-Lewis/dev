@@ -1,4 +1,5 @@
 import React from 'react';
+import PhotoViewer from './PhotoViewer';
 import choreScreenshot from '../assets/chore_app/chores_screenshot.jpg';
 import roomsScreenshot from '../assets/chore_app/rooms_screenshot.jpg';
 import editChore from '../assets/chore_app/edit_chore.jpg';
@@ -27,7 +28,7 @@ const Projects = () => {
         {projects.map((project) => (
           <div key={project.id} className="p-6 rounded-lg shadow-lg project">
             <h2 className="text-xl font-bold mb-2">{project.title}</h2>
-            {project.imageUrls?.map((imageUrl, index) => (
+            {/* {project.imageUrls?.map((imageUrl, index) => (
               <img
                 key={index}
                 src={imageUrl}
@@ -35,7 +36,8 @@ const Projects = () => {
                 className="w-full h-auto object-cover mb-4 rounded-md"
                 style={{ maxWidth: '100%' }} // Set maximum width to fit the container
               />
-            ))}
+            ))} */}
+            <PhotoViewer images={project.imageUrls}/>
             <p className="text-white mb-4 font-sans">{project.description}</p>
           </div>
         ))}
