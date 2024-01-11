@@ -17,7 +17,7 @@ const Projects = () => {
     {
       id: 2,
       title: 'House Assistant',
-      description: 'AI chatbot to answer any questions a housekeeper may have',
+      description: '(Under Construction) AI chatbot to answer any questions a housekeeper may have',
       imageUrls: ['https://via.placeholder.com/800x400', 'https://via.placeholder.com/800x400'], // Replace with actual image URL
     },
   ];
@@ -27,18 +27,9 @@ const Projects = () => {
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8 mx-auto">
         {projects.map((project) => (
           <div key={project.id} className="p-6 rounded-lg shadow-lg project">
-            <h2 className="text-xl font-bold mb-2">{project.title}</h2>
-            {/* {project.imageUrls?.map((imageUrl, index) => (
-              <img
-                key={index}
-                src={imageUrl}
-                alt={project.title}
-                className="w-full h-auto object-cover mb-4 rounded-md"
-                style={{ maxWidth: '100%' }} // Set maximum width to fit the container
-              />
-            ))} */}
+            <h2 className="text-xl font-bold font-sans text-center">{project.title}</h2>
+            <p className="text-white m-4 mt-1 font-sans text-center">{project.description}</p>
             <PhotoViewer images={project.imageUrls}/>
-            <p className="text-white mb-4 font-sans">{project.description}</p>
           </div>
         ))}
       </div>
