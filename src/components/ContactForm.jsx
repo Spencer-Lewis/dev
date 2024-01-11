@@ -1,19 +1,12 @@
 import React from 'react';
 
 const ContactForm = () => {
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   const formData = new FormData(e.target);
-  //   e.target.reset();
-  // };
-
   return (
-    <section id="contact-form-section" className="container mx-auto my-8 p-5">
+    <section id="contact-form-section" className="container mx-auto my-2 p-5">
       <h2 className="text-2xl font-bold mb-4 font-sans">Contact Me</h2>
       <form
         name="contact"
         method="post"
-        // onSubmit={handleSubmit}
         onSubmit={() => {}}
         className="text-black"
       >

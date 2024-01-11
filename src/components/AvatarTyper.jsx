@@ -36,12 +36,12 @@ const AvatarTyper = () => (
             <Typography variant="h5">
                 <TypeAnimation
                     sequence={[
-                        "Frontend Developer",
-                        1000,
-                        "Backend Developer",
-                        1000,
-                        "Problem Solver",
-                        1000
+                        "Frontend Developer ",
+                        1800,
+                        "Backend Developer ",
+                        1800,
+                        "Problem Solver ",
+                        1800
                     ]}
                     wrapper="span"
                     speed={50}

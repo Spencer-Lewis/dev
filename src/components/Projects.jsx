@@ -23,8 +23,8 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="container mx-auto my-8 px-4">
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8 mx-auto">
+    <section id="projects" className="container mx-auto my-4 px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-2 mx-auto">
         {projects.map((project) => (
           <div key={project.id} className="p-6 rounded-lg shadow-lg project">
             <h2 className="text-xl font-bold font-sans text-center">{project.title}</h2>
