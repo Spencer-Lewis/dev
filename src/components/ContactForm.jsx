@@ -1,6 +1,13 @@
 import React from 'react';
 
 const ContactForm = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    e.target.reset();
+    console.log('Form submitted:', formData);
+  };
+
   return (
     <section id="download" className="container mx-auto my-8 p-5">
       <h2 className="text-2xl font-bold mb-4 font-sans">Contact Me</h2>
@@ -8,11 +15,7 @@ const ContactForm = () => {
         name="contact"
         method="POST"
         data-netlify="true"
-        onSubmit={(e) => {
-          e.preventDefault();
-          const formData = new FormData(e.target);
-          console.log('Form submitted:', formData);
-        }}
+        onSubmit={handleSubmit}
         className="text-black"
       >
         <input type="hidden" name="form-name" value="contact" />
