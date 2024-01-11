@@ -30,7 +30,7 @@ const AvatarTyper = () => (
         </Grid>
         <div className="">
             <Typography variant="h4">
-                <TypeAnimation sequence={["Spencer Lewis"]} speed={40} cursor={false}/>
+                <p>Spencer Lewis</p>
             </Typography>
 
             <Typography variant="h5">
