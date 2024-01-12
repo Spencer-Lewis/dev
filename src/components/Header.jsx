@@ -15,6 +15,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import WorkIcon from '@mui/icons-material/Work';
 import DescriptionIcon from '@mui/icons-material/Description';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import { Link } from 'react-router-dom';
 
 const pages = [
@@ -22,6 +23,7 @@ const pages = [
   { label: 'Portfolio', icon: <WorkIcon />, route: '/portfolio' },
   { label: 'Resume', icon: <DescriptionIcon />, route: '/resume' },
   { label: 'Contact', icon: <MailOutlineIcon />, route: '/contact' },
+  { label: 'GitHub', icon: <GitHubIcon />, route: 'https://github.com/Spencer-Lewis' },
 ];
 
 function ResponsiveAppBar() {
@@ -87,7 +89,6 @@ function ResponsiveAppBar() {
               <ListItem button onClick={toggleDrawer(false)}>
                 <ListItemIcon sx={{ color: 'white', mr: -3, mb: 0 }}>{page.icon}</ListItemIcon>
                 <ListItemText primary={<p className='font-sans'>{page.label}</p>} />
-                
               </ListItem>
             </Link>
           ))}
