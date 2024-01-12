@@ -23,6 +23,27 @@ body {
     border-radius: 8px;
     cursor: pointer;
   }
+
+  .sliding-form {
+    opacity: 1;
+    transform: translateX(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease-in-out;
+  }
+  
+  .sliding-item {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease-in-out;
+  }
+  
+  .sliding-form.active {
+    transform: translateX(0);
+  }
+  
+  .sliding-form.active .sliding-item {
+    opacity: 1;
+    transform: translateX(0);
+  }
   
 footer {
     text-align: center;

@@ -22,9 +22,9 @@ const AvatarTyper = () => (
                 src={avatar}
                 alt="Spencer Lewis"
                 sx={{
-                    width: { xs: 120, md: 170 }, // Adjusted width for mobile and desktop
-                    height: { xs: 140, md: 190 }, // Adjusted height for mobile and desktop
-                    animation: `${growAnimation} 0.5s ease-in-out`,
+                    width: { xs: 120, md: 170 },
+                    height: { xs: 140, md: 190 },
+                    animation: `${growAnimation} 0.3s ease-in-out`,
                 }}
             />
         </Grid>
