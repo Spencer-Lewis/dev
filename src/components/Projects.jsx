@@ -1,12 +1,16 @@
 import React from 'react';
 import PhotoViewer from './PhotoViewer';
+// chore app screenshots
 import choreScreenshot from '../assets/chore_app/chores_screenshot.jpg';
 import roomsScreenshot from '../assets/chore_app/rooms_screenshot.jpg';
 import editChore from '../assets/chore_app/edit_chore.jpg';
 import kitchenScreenshot from '../assets/chore_app/kitchen_screenshot.jpg';
+// assistant app screenshots
+import helloScreenshot from '../assets/assistant/hello.png';
+import irrigationScreenshot from '../assets/assistant/irrigation.png';
+import whereIs from '../assets/assistant/where_is.png';
 
 const Projects = () => {
-  // Sample project data (replace this with your actual project data)
   const projects = [
     {
       id: 1,
@@ -18,7 +22,7 @@ const Projects = () => {
       id: 2,
       title: 'House Assistant',
       description: '(Under Construction) AI chatbot to answer any questions a housekeeper may have',
-      imageUrls: ['https://via.placeholder.com/800x400', 'https://via.placeholder.com/800x400'], // Replace with actual image URL
+      imageUrls: [helloScreenshot, irrigationScreenshot, whereIs],
     },
   ];
 
