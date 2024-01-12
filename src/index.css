@@ -24,10 +24,16 @@ body {
     cursor: pointer;
   }
 
+  .scroll-up-container {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.2s ease, transform 0.2s ease-in-out;
+  }
+
   .project-container {
     opacity: 0;
     transform: translateX(-20px);
-    transition: opacity 0.3s ease, transform 0.3s ease-in-out;
+    transition: opacity 0.2s ease, transform 0.2s ease-in-out;
   }
   
   .pop-in-animation {
@@ -37,19 +43,19 @@ body {
   
   .visible {
     opacity: 1;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
   }  
 
   .sliding-form {
     opacity: 1;
     transform: translateX(-20px);
-    transition: opacity 0.3s ease, transform 0.3s ease-in-out;
+    transition: opacity 0.15s ease, transform 0.15s ease-in-out;
   }
   
   .sliding-item {
     opacity: 0;
     transform: translateX(-20px);
-    transition: opacity 0.3s ease, transform 0.3s ease-in-out;
+    transition: opacity 0.15s ease, transform 0.15s ease-in-out;
   }
   
   .sliding-form.active {

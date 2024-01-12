@@ -27,7 +27,6 @@ const Projects = () => {
   ];
 
   useEffect(() => {
-    // Trigger animation when the component mounts
     setProjectsVisible(true);
   }, []);
 

@@ -4,12 +4,10 @@ const ContactForm = () => {
   const formRef = useRef();
 
   useEffect(() => {
-    // Add the animation class after a short delay
     const timeoutId = setTimeout(() => {
       formRef.current.classList.add('active');
-    }, 100);
+    }, 10);
 
-    // Clear the timeout to avoid memory leaks
     return () => clearTimeout(timeoutId);
   }, []);
 
